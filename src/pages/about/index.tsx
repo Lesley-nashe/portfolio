@@ -1,4 +1,3 @@
-
 import {
   Box,
   VStack,
@@ -10,6 +9,7 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import React from "react";
+import imgasset from "../../assets/IMG_0037.jpg";
 
 const Aboutpage = () => {
   return (
@@ -25,19 +25,24 @@ const Aboutpage = () => {
         <Stack direction={["column", "column"]}>
           <VStack>
             <Text>Get to know More</Text>
-            <Text>About Me</Text>
+            <Text fontSize="4xl" fontWeight="extrabold">About Me</Text>
           </VStack>
           <Stack
             alignItems="center"
             direction={["column", "column", "row", "row"]}
           >
             <Image
-              rounded="10%"
-              src="https://bit.ly/dan-abramov"
+              rounded="20%"
+              src={imgasset}
               alt="Dan Abramov"
+              height="305px"
+              width="300px"
             />
-            <Stack alignItems='center' direction="column">
-              <Stack alignItems='center' direction={["column", "column", "row", "row"]}>
+            <Stack  direction="column">
+              <Stack
+                alignItems="center"
+                direction={["column", "column", "row", "row"]}
+              >
                 <Card.Root borderRadius="15px" height="40%" width="320px">
                   <Card.Body gap="2">
                     <Card.Description>
@@ -59,12 +64,13 @@ const Aboutpage = () => {
               </Stack>
               <Flex width="500px">
                 <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
+                  I am a dedicated problem solver with a passion for developing
+                  and deploying innovative projects in collaborative
+                  environments. I specialize in creating scalable and
+                  high-performance solutions tailored to meet both client and
+                  business needs. Through my studies and exprience, I found my
+                  true passion in cloud development. I am passionate about
+                  solving problems and always looking for a new challenge.
                 </Text>
               </Flex>
             </Stack>
