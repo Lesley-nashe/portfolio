@@ -28,7 +28,7 @@ export default function Navbar() {
           pt={[4, 4, 0, 0]}
           gap={8}
         ></Flex> */}
-        <Flex gap="30px" direction={["column", "column", "row", "row"]}>
+        <Flex mt={3} gap="30px" direction={["column", "column", "row", "row"]}>
           <Text>About</Text>
           <Text>Experience</Text>
           <Text>Projects</Text>

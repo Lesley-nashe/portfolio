@@ -1,13 +1,7 @@
 import { Button } from "../../components/ui/button";
-import {
-  Box,
-  Flex,
-  Image,
-  Text,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Flex, Image, Text, Stack } from "@chakra-ui/react";
 import React from "react";
-import imgasset from '../../assets/70596.jpg';
+import imgasset from "../../assets/IMG_4072.jpg";
 
 const Homepage = () => {
   return (
@@ -21,17 +15,24 @@ const Homepage = () => {
         py="36"
         px="6"
       >
-        <Stack direction={["column", "column", "row", "row"]} gap="6" maxW="lg">
+        <Stack direction={["column", "column", "row", "row"]} gap="6" maxW="lg" alignItems="center">
           <Image
-            rounded="40%"
+            borderRadius="full"
             src={imgasset}
             alt="Dan Abramov"
-            height="250px"
-            width={["350px"]}
+            height="305px"
+            width="300px"
           />
-          <Stack alignItems='center' justifyContent='center' minW='250px' direction={["column", "column"]}>
+          <Stack
+            alignItems="center"
+            justifyContent="center"
+            minW="350px"
+            direction={["column", "column"]}
+          >
             <Text fontSize="lg">Hi, I'm</Text>
-            <Text fontSize="lg">Tadiwa Lesley Musekiwa</Text>
+            <Text fontSize="2xl" fontWeight="extrabold">
+              Tadiwa Lesley Musekiwa
+            </Text>
             <Text fontSize="lg">Technologist</Text>
             <Flex gap={2} direction="row">
               <Button borderRadius={"20px"} bg="green.500" size="md">

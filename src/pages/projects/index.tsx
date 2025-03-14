@@ -9,12 +9,12 @@ const Projects = () => {
         align="center"
         justify="center"
         bg="linear-gradient(to right, #d4d4d8, #52525b)"
-        py="12"
+        py="36"
         px="6"
       >
         <Stack alignItems='center' direction="column">
           <Text>Browse My Recent</Text>
-          <Text>Projects</Text>
+          <Text fontSize="4xl" fontWeight="extrabold">Projects</Text>
 
           <Stack direction={["column","column","row","row"]}>
             <Card.Root borderRadius="20px" width="320px">

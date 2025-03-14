@@ -9,13 +9,13 @@ const Contact = () => {
         align="center"
         justify="center"
         bg="linear-gradient(to right, #d4d4d8, #52525b)"
-        py="12"
+        py="36"
         px="6"
       >
         <VStack>
           <Text>Get in Touch</Text>
-          <Text>Contact Me</Text>
-          <HStack gap={0}>
+          <Text fontSize="4xl" fontWeight="extrabold">Contact Me</Text>
+          <HStack gap={0} mb={3}>
             <Button
               borderLeftRadius={"20px"}
               bg="#888888"

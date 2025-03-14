@@ -43,6 +43,33 @@ const Experience = () => {
       exp: "Experienced",
     },
   ] as expItem[];
+
+  const BackendExperienceItems = [
+    {
+      item: "GraphQl",
+      exp: "Experienced",
+    },
+    {
+      item: "Express",
+      exp: "Experienced",
+    },
+    {
+      item: ".NET",
+      exp: "Experienced",
+    },
+    {
+      item: "SpringRestAPI",
+      exp: "Intermediate",
+    },
+    {
+      item: "Azure Cloud Services",
+      exp: "Experienced",
+    },
+    {
+      item: "AWS",
+      exp: "Experienced",
+    },
+  ] as expItem[];
   return (
     <Box>
       <Flex
@@ -50,7 +77,7 @@ const Experience = () => {
         align="center"
         justify="center"
         bg="linear-gradient(to right, #d4d4d8, #52525b)"
-        py="12"
+        py="36"
         px="6"
       >
         <Stack alignItems="center" direction="column">
@@ -83,7 +110,7 @@ const Experience = () => {
                 >
                   <Heading>Backend Development</Heading>
                   <SimpleGrid columns={2} gapX={28} gapY={4}>
-                    {frontendExperienceItems.map((item, index) => (
+                    {BackendExperienceItems.map((item, index) => (
                       <Listcomponent item={item.item} experience={item.exp} />
                     ))}
                   </SimpleGrid>
