@@ -8,7 +8,6 @@ import {
   Heading,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { CheckCircle } from "phosphor-react";
 import React from "react";
 
 type expItem = {
@@ -54,7 +53,7 @@ const Experience = () => {
       exp: "Experienced",
     },
     {
-      item: ".NET",
+      item: "ASP.NET",
       exp: "Experienced",
     },
     {

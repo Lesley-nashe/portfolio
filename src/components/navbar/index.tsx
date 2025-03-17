@@ -1,6 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
-import { Button } from "../ui/button";
-import { ShoppingCart } from "phosphor-react";
+import { Flex, Link, Text } from "@chakra-ui/react";
 
 export default function Navbar() {
   return (
@@ -29,10 +27,15 @@ export default function Navbar() {
           gap={8}
         ></Flex> */}
         <Flex mt={3} gap="30px" direction={["column", "column", "row", "row"]}>
-          <Text>About</Text>
-          <Text>Experience</Text>
-          <Text>Projects</Text>
-          <Text>Contact</Text>
+          <Link>
+            <Text>About</Text>
+          </Link>
+          <Link>
+            <Text>Experience</Text>
+          </Link>
+          <Link>
+            <Text>Contact</Text>
+          </Link>
         </Flex>
       </Flex>
     </Flex>

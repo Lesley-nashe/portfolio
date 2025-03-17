@@ -1,4 +1,12 @@
-import { Box, Flex, VStack, Text, Button, HStack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  VStack,
+  Text,
+  Button,
+  HStack,
+  Link,
+} from "@chakra-ui/react";
 import React from "react";
 
 const Contact = () => {
@@ -14,7 +22,9 @@ const Contact = () => {
       >
         <VStack>
           <Text>Get in Touch</Text>
-          <Text fontSize="4xl" fontWeight="extrabold">Contact Me</Text>
+          <Text fontSize="4xl" fontWeight="extrabold">
+            Contact Me
+          </Text>
           <HStack gap={0} mb={3}>
             <Button
               borderLeftRadius={"20px"}
@@ -27,21 +37,22 @@ const Contact = () => {
             >
               lesliemusekiwa@gmail.com
             </Button>
-            <Button
-              borderRightRadius={"20px"}
-              colorScheme="green"
-              onClick={() => {}}
-              fontSize="16"
-              fontWeight="24"
-              height="50px"
-            >
-              linkedIn
-            </Button>
+            <Link href="https://www.linkedin.com/in/tech-and-nice-guy-tadiwa/">
+              <Button
+                borderRightRadius={"20px"}
+                colorScheme="green"
+                onClick={() => {}}
+                fontSize="16"
+                fontWeight="24"
+                height="50px"
+              >
+                linkedIn
+              </Button>
+            </Link>
           </HStack>
           <Flex gap="30px" direction={["column", "column", "row", "row"]}>
             <Text>About</Text>
             <Text>Experience</Text>
-            <Text>Projects</Text>
             <Text>Contact</Text>
           </Flex>
         </VStack>

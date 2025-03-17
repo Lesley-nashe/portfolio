@@ -3,7 +3,18 @@ import { Box, Flex, Image, Text, Stack } from "@chakra-ui/react";
 import React from "react";
 import imgasset from "../../assets/IMG_4072.jpg";
 
+
 const Homepage = () => {
+
+  const downloadPdf = () => {
+    const fileUrl = "/TadiwaLesleyMusekiwaCV.pdf"; // Relative to the public folder
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", "CV.pdf"); // Set download attribute
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <Box>
       {/* Hero Section */}
@@ -35,7 +46,7 @@ const Homepage = () => {
             </Text>
             <Text fontSize="lg">Technologist</Text>
             <Flex gap={2} direction="row">
-              <Button borderRadius={"20px"} bg="green.500" size="md">
+              <Button borderRadius={"20px"} onClick={downloadPdf} bg="green.500" size="md">
                 Download CV
               </Button>
               <Button borderRadius={"20px"} bg="blue.500" size="md">
